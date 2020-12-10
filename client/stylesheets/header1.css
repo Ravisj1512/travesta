@@ -1,0 +1,98 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+nav #icon1 {
+  color: #525659;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  float: right;
+}
+
+nav .nav-menu {
+  margin-left: 8rem;
+  margin-right: 4rem;
+  display: none;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  grid-gap: 1.5rem;
+}
+
+nav ul li {
+  text-decoration: none;
+  float: right;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav #logo {
+  width: 7rem;
+  height: 2rem;
+}
+
+.nav-btn {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 15.4rem;
+}
+
+.nav-btn .login-btn {
+  border-radius: 0.2rem;
+  border: 0.1rem solid;
+  padding: 0.75rem;
+  width: 8.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-btn .getQuote-btn {
+  color: white;
+  background-color: rgba(13, 16, 35, 0.91);
+  border-radius: 0.2rem;
+  border: 1px solid;
+  width: 8rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  #icon1 {
+    display: none;
+  }
+  nav {
+    margin-left: 5rem;
+    height: 70px;
+  }
+  nav #logo {
+    width: 9rem;
+    height: 2.5rem;
+    width: 8.5rem;
+    height: 2.5rem;
+  }
+  nav .nav-menu {
+    display: -ms-grid;
+    display: grid;
+  }
+  .nav-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=header1.css.map */

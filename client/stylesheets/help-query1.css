@@ -1,0 +1,46 @@
+.help {
+  margin-top: 4rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #8fcaf1;
+}
+
+.help #submit {
+  border: none;
+  padding: 0.9rem;
+  color: white;
+  background-color: #0099ff;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin: 1.5rem;
+  font-family: Nexa-Light;
+}
+
+.help h1 {
+  color: white;
+}
+
+.help_info p {
+  font-family: Nexa-Light;
+  color: rg1(21, 30, 59);
+}
+
+@media only screen and (min-width: 1024px) {
+  .help {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.2fr;
+        grid-template-columns: 1fr 0.2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.5rem 5rem;
+    background-color: #9cbfda;
+  }
+  .help #submit {
+    margin: 0rem;
+    width: 16rem;
+    background-color: #3c7abe;
+  }
+}
+/*# sourceMappingURL=help-query1.css.map */

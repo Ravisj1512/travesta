@@ -1,0 +1,456 @@
+.banner {
+	display: none;
+}
+.fil-parameter {
+	display: none;
+}
+.doctor {
+	border: 0.1rem solid #cccc;
+	.doc_info {
+		margin: 0rem;
+	}
+	.appointment {
+		display: flex;
+		justify-content: center;
+	}
+}
+.doctors_card {
+	padding: 1.5rem 1.5rem;
+}
+.doc_info {
+	ul {
+		li {
+			line-height: 1.7rem;
+			display: flex;
+			&:nth-child(1) {
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					content: "\f0a3";
+					font-size: 1rem;
+					padding: 0rem 0.5rem;
+					color: rgb(1,115,178);
+					font-weight: bold;
+				}
+			}
+			&:nth-child(2) {
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					content: "\f559";
+					font-size: 1.2rem;
+					padding: 0rem 0.5rem;
+					color: rgb(1,115,178);
+					font-weight: bold;
+				}
+			}
+			&:nth-child(3) {
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					content: "\f017";
+					font-size: 1rem;
+					padding: 0rem 0.5rem;
+					color: rgb(1,115,178);
+					font-weight: bold;
+				}
+			}
+			&:nth-child(4) {
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					content: "\f0f8";
+					font-size: 1rem;
+					padding: 0rem 0.5rem;
+					color: rgb(1,115,178);
+					font-weight: bold;
+				}
+			}
+			&:nth-child(5) {
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					content: "\f3c5";
+					font-size: 1rem;
+					padding: 0rem 0.5rem;
+					color: rgb(1,115,178);
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+.appointment {
+	button {
+		padding: 0.47rem 1.2rem;
+		color: white;
+		background-color: rgb(21, 30, 59);
+		border: none;
+		margin: 1rem;
+		border-radius: 0rem;
+	}
+}
+.doc-header {
+	display: flex;
+	padding: 1.7rem;
+	justify-content: space-between;
+	align-items: baseline;
+	h2 {
+		padding: 0rem;
+		font-weight: 100;
+	}
+	button {
+		padding: 0.7rem;
+		background-color: #80808073;
+		border: none;
+	}
+}
+footer {
+	.more_info {
+		ul {
+			li {
+				line-height: 2rem;
+			}
+		}
+	}
+	.socialmedia2 {
+		ul {
+			li {
+				line-height: 2rem;
+			}
+		}
+	}
+	h1 {
+		color: #ffffffc4;
+	}
+}
+.socialmedia {
+	display: none;
+}
+.filter-container {
+	display: none;
+}
+@media only screen and (min-width:600px) {
+	.fil-parameter {
+		display: none;
+	}
+	.banner {
+		display: block;
+		height: 15rem;
+		width: 100%;
+		align-items: center;
+		background: linear-gradient(to bottom,rgba(122,176,212,0.8)100%,rgba(13,16,35,0.86) 85%);
+		position: relative;
+		img {
+			height: 15rem;
+			width: 100%;
+			position: relative;
+			z-index: -1;
+		}
+		.banner_tag {
+			position: absolute;
+			z-index: 1;
+			bottom: 7rem;
+			font-weight: 100;
+			font-size: 1.5rem;
+			left: 3rem;
+			padding: 0rem;
+			font-family: Nexa-light;
+		}
+	}
+	.doc-header {
+		button {
+			padding: 0.55rem 1rem;
+		}
+		h2 {
+			font-family: Nexa;
+		}
+	}
+	.filter-container {
+		display: grid;
+		float: left;
+		justify-content: right;
+		grid-gap: 1rem;
+		display: none;
+		padding-left: 2.5rem;
+		width: 14rem;
+		font-family: Nexa;
+		font-size: 0.8rem;
+	}
+	.doctor {
+		display: grid;
+		grid-template-columns: 1fr 0.5fr;
+		.name {
+			grid-column: 1;
+			grid-row: 1;
+			h3 {
+				padding: 0.8rem 0rem;
+				align-items: baseline;
+			}
+		}
+		.appointment {
+			grid-column: 1;
+			grid-row: 3;
+			width: 67%;
+			justify-content: left;
+		}
+		img {
+			grid-column: 2;
+			grid-row: 1/4;
+			height: 100%;
+		}
+	}
+	.doctors_card {
+		padding-top: 0rem;
+	}
+	.doc_info {
+		grid-column: 1;
+		grid-row: 2;
+		padding-left: 1.5rem;
+		ul {
+			line-height: 1.2rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			font-weight: 100;
+		}
+	}
+	.appointment {
+		button {
+			padding: 0.6rem 1.47rem;
+			margin: 1rem 2.1rem;
+		}
+	}
+	.filter-container-heading {
+		padding: 0.7rem 1.3rem;
+		background-color: #cccccc7a;
+		color: #000000d9;
+		h3 {
+			font-family: Nexa;
+			font-size: 0.85rem;
+		}
+	}
+	.location-heading {
+		display: grid;
+		grid-template-columns: 1fr 0.2fr;
+		font-size: 1rem;
+		margin: 1rem 0rem;
+		h4 {
+			font-family: Nexa-Light;
+			font-weight: bold;
+		}
+	}
+	.treatment-heading {
+		display: grid;
+		grid-template-columns: 1fr 0.2fr;
+		font-size: 1rem;
+		margin: 1rem 0rem;
+		h4 {
+			font-family: Nexa-Light;
+			font-weight: bold;
+		}
+	}
+	.hospital-heading {
+		display: grid;
+		grid-template-columns: 1fr 0.2fr;
+		font-size: 1rem;
+		margin: 1rem 0rem;
+		h4 {
+			font-family: Nexa-Light;
+			font-weight: bold;
+		}
+	}
+	.yearsOfExp-heading {
+		display: grid;
+		grid-template-columns: 1fr 0.2fr;
+		font-size: 1rem;
+		margin: 1rem 0rem;
+		h4 {
+			font-family: Nexa-Light;
+			font-weight: bold;
+		}
+	}
+	.show-more {
+		margin: 1rem 0rem;
+		color: #0099ff;
+	}
+	.location-filter {
+		border-bottom: 0.13rem solid #cccc;
+		padding-left: 1rem;
+		line-height: 1.2rem;
+		input {
+			margin-right: 0.5rem;
+		}
+	}
+	.treatment-filter {
+		border-bottom: 0.13rem solid #cccc;
+		padding-left: 1rem;
+		line-height: 1.2rem;
+		input {
+			margin-right: 0.5rem;
+		}
+	}
+	.hospital-filter {
+		border-bottom: 0.13rem solid #cccc;
+		padding-left: 1rem;
+		line-height: 1.2rem;
+		input {
+			margin-right: 0.5rem;
+		}
+	}
+	.yearsOfExp-filter {
+		border-bottom: 0.13rem solid #cccc;
+		padding-left: 1rem;
+		line-height: 1.2rem;
+		input {
+			margin-right: 0.5rem;
+		}
+	}
+	#filter-icon {
+		word-spacing: 0rem;
+	}
+	#icon01 {
+		color: #0099ff;
+		font-size: 0.85rem;
+	}
+	#icon02 {
+		color: #cccc;
+		font-size: 1.2rem;
+	}
+	.socialmedia2 {
+		display: none;
+	}
+	.socialmedia {
+		display: block;
+	}
+	footer {
+		h1 {
+			display: none;
+		}
+	}
+}
+@media only screen and (min-width:1024px) {
+	.banner {
+		.banner_tag {
+			h2 {
+				left: 3rem;
+				font-family: Nexa-bold;
+			}
+		}
+	}
+	.banner_tag {
+		font-weight: 100;
+	}
+	.doc-header {
+		h2 {
+			font-size: 1.1rem;
+			font-family: Nexa-Light;
+			font-weight: bold;
+		}
+	}
+	.filter-container {
+		display: grid;
+		width: 20rem;
+		font-family: Nexa-Light;
+	}
+	.location-filter {
+		width: 16rem;
+		line-height: 1.5rem;
+	}
+	.treatment-filter {
+		width: 16rem;
+		line-height: 1.5rem;
+	}
+	.hospital-filter {
+		width: 16rem;
+		line-height: 1.5rem;
+	}
+	.yearsOfExp-filter {
+		width: 16rem;
+		line-height: 1.5rem;
+	}
+	.show-more {
+		font-weight: bold;
+	}
+	.doctor {
+		grid-template-rows: 1fr 1.5fr 1fr;
+		grid-gap: 1rem;
+		align-items: center;
+		.name {
+			h3 {
+				font-size: 1.3rem;
+				font-family: Nexa-bold;
+			}
+		}
+	}
+	.doc_info {
+		ul {
+			li {
+				font-family: Nexa-Light;
+			}
+		}
+	}
+	.fil-parameter {
+		display: block;
+		#parameter1 {
+			padding: 0.5rem;
+			border: 0.1rem solid #cccc;
+			width: fit-content;
+			display: inline-table;
+			margin: 0.2rem 0rem;
+			border-radius: 0.9rem;
+			&::after {
+				font-family: "Font Awesome 5 Free";
+				content: "\f00d";
+				color: #0099ff;
+				font-weight: 600;
+				margin-left: 0.5rem;
+			}
+		}
+		#parameter2 {
+			&::after {
+				font-family: "Font Awesome 5 Free";
+				content: "\f00d";
+				color: #0099ff;
+				font-weight: 600;
+				margin-left: 0.5rem;
+			}
+		}
+		#parameter3 {
+			&::after {
+				font-family: "Font Awesome 5 Free";
+				content: "\f00d";
+				color: #0099ff;
+				font-weight: 600;
+				margin-left: 0.5rem;
+			}
+		}
+		#parameter4 {
+			&::after {
+				font-family: "Font Awesome 5 Free";
+				content: "\f00d";
+				color: #0099ff;
+				font-weight: 600;
+				margin-left: 0.5rem;
+			}
+		}
+	}
+	#parameter2 {
+		padding: 0.5rem;
+		border: 0.1rem solid #cccc;
+		width: fit-content;
+		display: inline-table;
+		margin: 0.2rem 0rem;
+		border-radius: 0.9rem;
+	}
+	#parameter3 {
+		padding: 0.5rem;
+		border: 0.1rem solid #cccc;
+		width: fit-content;
+		display: inline-table;
+		margin: 0.2rem 0rem;
+		border-radius: 0.9rem;
+	}
+	#parameter4 {
+		padding: 0.5rem;
+		border: 0.1rem solid #cccc;
+		width: fit-content;
+		display: inline-table;
+		margin: 0.2rem 0rem;
+		border-radius: 0.9rem;
+	}
+}

@@ -1,0 +1,163 @@
+.filter-container{
+    display: none;
+}
+.hospital img{
+    width: 100%;
+    display: block;
+}
+.hospital_card{
+    display: grid;
+    grid-gap:1rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+.hospital{
+    border: 0.1rem solid #cccc;
+}
+.hos-name{
+    color:rgb(1,115,178);
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+.hos-name h3{
+    display: flex;
+}
+.hos-name h3::before{
+    content: '\2015';
+    font-size: 1.85rem;
+    left: 0rem;
+}
+
+.hos_info ul{
+    display:grid;
+    grid-gap:0.5rem;
+    padding: 1rem;
+}
+.hos_info ul li{
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+.hos_info ul li:nth-child(1)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+    color: rgb(1,115,178);
+    font-weight: bold;
+}
+
+.hos_info ul li:nth-child(2)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f236";
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+    color: rgb(1,115,178);
+    font-weight: bold;
+}
+
+.hos_info ul li:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0f1";
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+    color: rgb(1,115,178);
+    font-weight: bold;
+}
+.hos_info .famous-treatment #ft{
+  padding: 0.5rem;
+  border:0.1rem solid #cccc;
+  border-radius: 1rem;
+  width: max-content;
+  margin: 0.2rem 0rem;
+  display: inline-block;
+  font-family: Nexa-Light;
+  font-size: 0.9rem;
+}
+.famous-treatment{
+    margin: 0rem 1.5rem;
+}
+.call button{
+    padding: 0.5rem;
+    width: 5rem;
+    margin:1rem;
+    width: 55%;
+    color: white;
+    background-color: rgb(21, 30, 59);
+    border: none;
+}
+.call{
+    text-align: center;
+}
+
+
+@media only screen and (min-width:600px)
+{
+    .help_info #submit{
+        width: 16rem;
+        font-family: inherit;
+    }
+    .hospital{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+    }
+    .hos-name {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .hos_info ul{
+        grid-template-columns: 1fr 0.5fr;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .call{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: left;
+    }
+    .call button{
+        margin: 1.5rem;
+        width: 35%;
+    }
+    .hospital img{
+        grid-column: 2;
+        grid-row: 1/4;
+        height: 100%;
+    }
+    
+    .location-filter, .treatment-filter, .department-filter{
+        width:17.5rem;
+    }
+    .department-filter input{
+        margin-right: 0.5rem;
+    }
+   
+}
+
+@media only screen and (min-width:1024px)
+{
+    .department-heading{
+        display: grid;
+        grid-template-columns: 1fr 0.2fr;
+        margin:1rem 0rem;
+    }
+
+    .department-filter{
+        line-height: 1.5rem;
+        padding-left: 1rem;
+        border-bottom: 0.13rem solid #cccc;
+
+    }
+    .department-heading h4{
+        font-family: Nexa-Light;
+        font-weight: bold ;
+    }
+
+    
+    .filter-container{
+        display: grid;
+        width:22rem;
+        font-family: Nexa-Light;
+    }
+
+}
